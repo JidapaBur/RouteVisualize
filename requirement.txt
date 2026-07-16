@@ -1,6 +1,4 @@
-from pathlib import Path
-
-req = """streamlit>=1.42,<2.0
+streamlit>=1.42,<2.0
 pandas>=2.2,<3.0
 numpy>=1.26,<3.0
 plotly>=5.24,<7.0
@@ -8,11 +6,4 @@ folium>=0.20,<1.0
 streamlit-folium>=0.24,<1.0
 openpyxl>=3.1,<4.0
 xlrd>=2.0,<3.0
-
-# Optional (recommended)
 pyarrow>=17.0
-"""
-
-path="/mnt/data/requirements.txt"
-Path(path).write_text(req,encoding="utf-8")
-print(path)
