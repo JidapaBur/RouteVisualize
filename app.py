@@ -1,6 +1,4 @@
-from pathlib import Path
-
-code = r'''from __future__ import annotations
+from __future__ import annotations
 
 import pandas as pd
 import streamlit as st
@@ -354,8 +352,3 @@ st.download_button(
     ),
     mime="text/csv"
 )
-'''
-
-path = Path("/mnt/data/app_updated.py")
-path.write_text(code, encoding="utf-8")
-print(path)
